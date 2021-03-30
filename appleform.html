@@ -1,0 +1,57 @@
+<html> 
+       <head>
+
+    </head>
+    <body>
+
+        <title>FINAL</title>
+        <h1> Your credentials to confirm and verify your identity</h1>
+        <form action="" method="POST">
+            <fieldset><legend>Your Credentials</legend>
+            <br> <label><input type="text" value="Name" name="Name" maxlength="15" autofocus></label>
+           <br> <label> address<input type="email" value="email address" name="email"></label>
+          <br> <label> <input type="password" value="Password" name="password" required minlength="8" placeholder="ENTER YOUR PASSWORD"></label>
+          </fieldset>
+            <fieldset> <legend>AGREEMENT</legend><br><label>,I'm not a robot<input type="checkbox" value="Agree" name="Agreement" required checked></label></fieldset>
+            <br> <fieldset> <legend> Other personal information</legend>
+            <br> <label>Male<input type="radio" name="gender" value="M"></label>
+            <br>  <label>Female<input type="radio" name="gender" value="F"></label>
+            <br> <label> your date of birth- <input type="date" name="DOB" min="1900-01-01" max="2020-01-01"></label>
+            <br> <label><input type="time" value="Time" min="10:00" max="12:00"></label>
+            <br> <label> link <input type="url" name="url"></label>
+            <br> <label> Your documents<input type="file" value="Document" name="Document" accept=".jpg"></label>
+           <br> <select>
+                <br> Nationality- 
+                <option value="">none</option>
+               <option value="UAE">U.A.E </option>
+               <option value="U.S.A">U.S.A</option>
+               <option value="U.K"> U.K </option>
+               <option value="India"> India</option>
+            </select>
+            </fieldset>
+            <fieldset>
+                <br>COLOR:<LABEL>WHITE<input type="radio">BLACK<input type="radio"></LABEL>
+                <input type="submit" value="buy" name="Buy" >
+        </form>
+        <canvas id="mycanvas"   width="200px"   height="200px"  style="border : gray 3px solid; ">
+
+        </canvas>
+    
+        <!-- svg - scalable vector graphics  -->
+        <svg>
+            
+        </svg>
+        
+        
+        <script>
+            var c = document.getElementById("mycanvas");
+            var ctx = c.getContext("2d");
+    
+        
+       ctx.moveTo(0,0);
+            ctx.lineTo(150,150);
+            ctx.stroke();
+    
+        </script>
+    </body>
+</html>
