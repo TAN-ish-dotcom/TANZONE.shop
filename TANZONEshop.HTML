@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>TANZONE.shop</title>
+<style>
+    body{background-image: linear-gradient(white,skyblue);}
+    ul{
+        list-style : none;
+        margin: 0px;
+        padding: 0px;
+    }
+    li{
+        float: left;
+    }
+    a { display: block;
+         margin: 0px 20px;
+    padding: 0px 20px;
+    text-decoration: none;
+    line-height: 50px;
+    font-size:25px;
+    border-right:black 2px solid;
+    }
+td{ border: gold 1px solid;}
+    a:hover {
+        background-color: cornsilk;
+        font-size:26px;
+    }
+    
+    #navbar{width : 100%;
+    height : 50px;
+    background-color: lightblue ;}
+marquee{margin: 10px;}
+    h1{ float: left;
+    color: black;
+    margin-bottom: 10px;
+    margin-right:35px ;
+    line-height: 0.6;}
+
+    table{width:100%;
+    margin :50px}
+
+div{
+text-align: center;
+margin: 0px;}
+
+    h1:hover{ text-shadow: 7px 7px 5px crimson;}
+img{ width : 100%;
+height:200px}
+
+.footer{ margin: 10px;
+    background-color: lightblue;
+    height: 20px;
+    width: 100%;
+}
+</style>
+    </head>
+    <body>
+        <img src="e-store OG.jpg" >
+       <h1>TANZONE.shop</h1>
+        <ul><div id="navbar">
+           <li><a href="">home</a></li>
+           <li><a href="E-STOREaboutUS.html">About us</a></li>
+           <li><a href="E-STOREgallery.html">Gallery</a></li>
+           <li><a href="E-STOREcontactus.html">Contact us</a></li>
+          
+       </ul> </div>
+<img id="img2" src="e-store 2.png">
+<br><marquee behaviour="scroll" direction="left"><div><b>WELCOME TO TANZONE.shop</b></div></marquee>
+
+<table> <tr>
+    <td><a href="Electronics.html"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/apple-store-gift-cards-202003_GEO_AE_FMT_WHH?wid=580&hei=530&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1598550612000"></a></td>
+    
+    <td><a href="cars.html"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/02-us-chiron-1513866058.jpg?crop=1.00xw:0.752xh;0,0.221xh&resize=480:*" width="40px" height="40px"></a></td>
+    
+    
+    </tr>
+    <tr>
+<td>ELECTRONICS</td>
+
+<td>CARS</td>
+
+
+    </tr>
+</table>
+
+    </body>
+    </body>
+
+    <p>Click the button to get your coordinates.</p>
+
+
+<button onclick="getLocation()">Click here to know your location</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<div class="footer">&copy; all rights reserved 2020</div>
+</html>
